@@ -1,0 +1,97 @@
+.heading {
+  font-size: 1.9rem;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.main-ui {
+  padding: 10px;
+}
+
+.form-section {
+  padding: 10px;
+  text-align: center;
+}
+
+.our-field {
+  padding: 5px;
+}
+
+.progress {
+  position: relative;
+  border: 1px solid rgba(96, 79, 79, 0.462);
+  border-right: none;
+  margin-top: 20px;
+}
+
+@keyframes showError {
+  50% {
+    scale: (2);
+    border: 2px solid rgba(232, 10, 10, 0.644);
+  }
+}
+
+.progress-on-error {
+  animation: 0.4s showError;
+}
+
+.progress-inner {
+  position: absolute;
+  background-color: rgb(81, 221, 113);
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  opacity: 0.57;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.5s ease-out;
+}
+
+@keyframes showErrorOnBar {
+  50% {
+    background-color: rgba(239, 56, 15, 0.238);
+  }
+}
+
+.progress-inner-on-error {
+  animation: 0.4s showErrorOnBar;
+}
+
+.boxes {
+  display: flex;
+  width: 100%;
+}
+
+.box {
+  border-right: 1px solid rgba(96, 79, 79, 0.421);
+  height: 40px;
+  flex: 1;
+}
+
+@keyframes showError2 {
+  50% {
+    scale: (2);
+    border-right: 2px solid rgba(232, 10, 10, 0.644);
+  }
+}
+
+.box-on-error {
+  animation: 0.4s showError2;
+}
+
+.empty-space {
+  padding-bottom: 20px;
+}
+
+.error {
+  position: absolute;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+.nextValueWithZero {
+  position: absolute;
+}
